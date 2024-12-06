@@ -54,7 +54,7 @@ export const LanguagePicker = ({
         {activeTagId && isCollapsed ? <ActiveTagButton data={activeTagId} /> : null}
       </div>
       <div
-        className={classNames("-mx-1 mt-2 overflow-hidden duration-300 ease-in-out", {
+        className={classNames("-mx-1 mt-2 overflow-scroll duration-300 ease-in-out", {
           ["max-h-0 sm:max-h-20"]: isCollapsed,
           ["max-h-full"]: !isCollapsed
         })}
